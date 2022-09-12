@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Webb21-CMS: Headless CMS med din Wordpress.com och React Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Importera projektet till ditt eget GitHub-repository
 
-In the project directory, you can run:
+Börja med att klicka på Create repository och efter det "Import code". Du kommer att komma till en sida där
+du måste lägga url av projektet som du kommer att klona sen. Klicka på Begin import knappen.
+Du kan kickla på url som bekräfta att du lyckades med importering. Det kommer att ta dig till det nya repository som innehåller all kod.
 
-### `npm start`
+### Klona din GitHub repository (local)
+Tryck på Code och i HTTPS kopiera du url. Efter det du kan köra git clone your-GitHub-repository-url.
+Öppna projektet i visual studio, i projektet terminalen du kan köra: npm install.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Skapa och ställ in environment variable
+I .env fil skapa en variable **REACT_APP_API_URL** och lägg din url **"https://public-api.wordpress.com/rest/v1.1/sites/**your-wordpress-com-website-url"**
+Min url : https://public-api.wordpress.com/rest/v1.1/sites/andree652609768.wordpress.com/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Kör projektet local med React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I terminalen du kan köra: npm start
 
-### `npm run build`
+### Deploy your GitHub repo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Jag använde Vercel. Jag skapade en konto hos Vercel och importera min Github repo.
+Efter det in Configure project- environment variables måste vi lägga Name och Value.
+I Name lägger vi **REACT_APP_API_URL** och in value url : https://public-api.wordpress.com/rest/v1.1/sites/andree652609768.wordpress.com/. Slutligen klicka på deploy knappen.

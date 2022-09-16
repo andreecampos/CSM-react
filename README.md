@@ -1,10 +1,8 @@
 # Webb21-CMS: Headless CMS med din Wordpress.com och React Frontend
 
-
 ### Importera projektet till ditt eget GitHub-repository
 
-Börja med att klicka på Create repository och efter det "Import code". Du kommer att komma till en sida där
-du måste lägga url av projektet som du kommer att klona sen. Klicka på Begin import knappen.
+Börja med att klicka på Create repository och efter det "Import code". Du kommer att komma till en sida där du måste lägga url av projektet som du kommer att klona sen (projektet som du kommer att jobba med). Klicka på Begin import knappen.
 Du kan kickla på url som bekräfta att du lyckades med importering. Det kommer att ta dig till det nya repository som innehåller all kod.
 
 ### Klona din GitHub repository (local)
@@ -18,7 +16,7 @@ Min url : https://public-api.wordpress.com/rest/v1.1/sites/andree652609768.wordp
 
 ### Kör projektet local med React
 
-I terminalen du kan köra: npm start
+I terminalen du kan köra: npm install och sen npm start
 
 ### Deploy your GitHub repo
 
